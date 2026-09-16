@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Make Well Services — Votre partenaire pour des prestations professionnelles sur mesure au Burundi.">
+<title>Make Well Services | Prestations professionnelles sur mesure</title>
+<style>
+:root{--gold:#d9a928;--gold2:#f4c64e;--black:#050505;--dark:#0d0d0d;--muted:#b8b8b8;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(5,5,5,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(217,169,40,.2)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:1px}
+.brand img{width:46px;height:46px;object-fit:contain}
+.brand span{color:var(--gold2)}
+nav{display:flex;gap:25px;align-items:center}
+nav a{font-size:14px;color:#eee;transition:.2s}
+nav a:hover{color:var(--gold2)}
+.menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{min-height:100vh;padding:140px 0 80px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px;background:radial-gradient(circle at 75% 45%,rgba(217,169,40,.12),transparent 32%),linear-gradient(180deg,#050505,#0a0a0a)}
+.badge{display:inline-block;border:1px solid rgba(217,169,40,.5);color:var(--gold2);padding:8px 14px;border-radius:999px;font-size:12px;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px}
+h1{font-size:clamp(42px,6vw,74px);line-height:1.02;margin-bottom:20px}
+.gold{color:var(--gold2)}
+.hero p{font-size:19px;color:#d0d0d0;max-width:650px;margin-bottom:30px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:7px;font-weight:700;border:1px solid var(--gold);transition:.2s}
+.btn.primary{background:var(--gold);color:#050505}
+.btn.primary:hover{background:var(--gold2)}
+.btn.secondary:hover{background:rgba(217,169,40,.1)}
+.logo-card{display:flex;justify-content:center;align-items:center}
+.logo-card img{width:min(460px,90%);filter:drop-shadow(0 0 35px rgba(217,169,40,.12))}
+section{padding:90px 0}
+.section-head{max-width:720px;margin-bottom:45px}
+.kicker{color:var(--gold2);text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(30px,4vw,46px);margin-bottom:12px}
+.section-head p{color:var(--muted)}
+.about{background:#090909}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}
+.about-box{border-left:2px solid var(--gold);padding-left:25px}
+.about-box p{color:#d0d0d0;margin-bottom:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#111,#090909);border:1px solid #242424;border-radius:14px;padding:26px;min-height:190px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(217,169,40,.6)}
+.icon{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;border:1px solid rgba(217,169,40,.55);color:var(--gold2);font-size:20px;margin-bottom:17px}
+.card h3{margin-bottom:8px;font-size:18px}
+.card p{color:#aaa;font-size:14px}
+.highlight{background:linear-gradient(100deg,#0c0c0c,#15110a);border-top:1px solid rgba(217,169,40,.2);border-bottom:1px solid rgba(217,169,40,.2)}
+.highlight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.stat{padding:25px;text-align:center}
+.stat strong{display:block;font-size:34px;color:var(--gold2)}
+.stat span{color:#aaa}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step{padding:22px;border:1px solid #252525;border-radius:12px;background:#0b0b0b}
+.step b{color:var(--gold2);font-size:13px}
+.step h3{margin:8px 0}
+.step p{color:#aaa;font-size:14px}
+.contact{background:#090909}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-card{border:1px solid #282828;border-radius:15px;padding:30px;background:#0d0d0d}
+.contact-card p{color:#bbb;margin:10px 0}
+form{display:grid;gap:13px}
+input,textarea,select{width:100%;background:#070707;border:1px solid #2b2b2b;color:#fff;padding:13px;border-radius:7px;font:inherit}
+textarea{min-height:130px;resize:vertical}
+footer{padding:30px 0;border-top:1px solid #222;color:#888;font-size:13px}
+footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){
+nav{display:none;position:absolute;top:76px;left:0;right:0;background:#080808;padding:18px 4%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #222}
+nav.open{display:flex}
+.menu{display:block}
+.hero,.about-grid,.contact-grid{grid-template-columns:1fr}
+.hero{padding-top:120px;text-align:center}
+.hero p{margin-left:auto;margin-right:auto}
+.actions{justify-content:center}
+.cards{grid-template-columns:1fr 1fr}
+.process,.highlight-grid{grid-template-columns:1fr 1fr}
+.logo-card{order:-1}
+}
+@media(max-width:560px){
+.cards,.process,.highlight-grid{grid-template-columns:1fr}
+section{padding:65px 0}
+.brand span{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#accueil"><img src="logo.png" alt="Make Well Services"><span>MAKE WELL SERVICES</span></a>
+    <button class="menu" aria-label="Menu">☰</button>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#diaspora">Diaspora & Investisseurs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="container" style="display:contents">
+    <div>
+      <span class="badge">Burundi · Services professionnels</span>
+      <h1>Des solutions <span class="gold">sur mesure</span>, un seul partenaire.</h1>
+      <p>Make Well Services centralise et coordonne des prestations fiables pour les particuliers, entreprises, visiteurs, diaspora et investisseurs.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Demander un service</a>
+        <a class="btn secondary" href="#services">Découvrir nos services</a>
+      </div>
+    </div>
+    <div class="logo-card"><img src="logo.png" alt="Logo Make Well Services"></div>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">À propos</div>
+    <h2>Votre partenaire pour des prestations professionnelles sur mesure.</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-box">
+      <p><strong>Make Well Services</strong> est une maison mère basée au Burundi, qui développe et coordonne plusieurs activités de services au sein d’une même structure.</p>
+      <p>Notre objectif est simple : comprendre le besoin du client, coordonner les ressources nécessaires et fournir une solution pratique, professionnelle et fiable.</p>
+    </div>
+    <div>
+      <p style="color:#bbb">Nous travaillons avec un réseau de partenaires, fournisseurs et prestataires afin de répondre à des demandes variées, tout en mettant l’accent sur la qualité du service, la coordination et la satisfaction du client.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">Nos services</div>
+    <h2>Une plateforme de services, plusieurs solutions.</h2>
+    <p>Des prestations adaptées aux besoins des particuliers, entreprises, visiteurs, diaspora et investisseurs.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><div class="icon">⌂</div><h3>Suivi de chantier</h3><p>Suivi et coordination de travaux, avec fourniture de matériaux, sable et gravier.</p></article>
+    <article class="card"><div class="icon">▰</div><h3>Matériaux & logistique</h3><p>Approvisionnement et transport de matériaux de construction avec nos moyens logistiques.</p></article>
+    <article class="card"><div class="icon">🚗</div><h3>Véhicules & chauffeurs</h3><p>Location de véhicules et mise à disposition de chauffeurs professionnels selon le besoin.</p></article>
+    <article class="card"><div class="icon">✈</div><h3>Accueil VIP</h3><p>Accueil à l’aéroport, assistance et accompagnement professionnel des visiteurs.</p></article>
+    <article class="card"><div class="icon">◉</div><h3>Transport & accompagnement</h3><p>Déplacements en ville et à l’intérieur du Burundi pour visiteurs et diaspora.</p></article>
+    <article class="card"><div class="icon">★</div><h3>Tourisme & visites</h3><p>Organisation de visites et accompagnement pour découvrir le Burundi dans de bonnes conditions.</p></article>
+    <article class="card"><div class="icon">✦</div><h3>Événements</h3><p>Organisation, décoration et mise à disposition de serveurs professionnels pour vos événements.</p></article>
+    <article class="card"><div class="icon">▤</div><h3>Fournitures de bureau</h3><p>Fourniture, impression, reliure et autres besoins administratifs professionnels.</p></article>
+    <article class="card"><div class="icon">＋</div><h3>Services personnalisés</h3><p>Vous avez une demande particulière ? Nous étudions votre besoin et recherchons la meilleure solution.</p></article>
+  </div>
+</div>
+</section>
+
+<section class="highlight" id="diaspora">
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">Notre valeur</div>
+    <h2>Pour ceux qui veulent agir au Burundi, même à distance.</h2>
+    <p>Make Well Services facilite la coordination de besoins concrets : construction, mobilité, hébergement, accueil, accompagnement et services professionnels.</p>
+  </div>
+  <div class="highlight-grid">
+    <div class="stat"><strong>01</strong><span>Un interlocuteur pour plusieurs besoins</span></div>
+    <div class="stat"><strong>02</strong><span>Coordination des partenaires et ressources</span></div>
+    <div class="stat"><strong>03</strong><span>Solutions adaptées à chaque demande</span></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">Comment ça marche</div>
+    <h2>Simple, clair et professionnel.</h2>
+  </div>
+  <div class="process">
+    <div class="step"><b>01</b><h3>Votre demande</h3><p>Vous nous expliquez précisément le service recherché.</p></div>
+    <div class="step"><b>02</b><h3>Analyse</h3><p>Nous identifions les ressources et partenaires nécessaires.</p></div>
+    <div class="step"><b>03</b><h3>Coordination</h3><p>Nous organisons la prestation et assurons le suivi.</p></div>
+    <div class="step"><b>04</b><h3>Réalisation</h3><p>Le service est exécuté avec un suivi jusqu’à sa finalisation.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+  <div class="section-head">
+    <div class="kicker">Contact</div>
+    <h2>Parlons de votre besoin.</h2>
+    <p>Décrivez votre demande. L’équipe Make Well Services pourra ensuite vous orienter vers la solution adaptée.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3 class="gold">Make Well Services</h3>
+      <p>Maison mère basée au Burundi.</p>
+      <p><strong>Slogan :</strong> Votre partenaire pour des prestations professionnelles sur mesure.</p>
+      <p style="margin-top:25px;color:#888">Ajoutez ici vos coordonnées officielles, adresse, téléphone, e-mail et liens sociaux avant la mise en ligne.</p>
+    </div>
+    <div class="contact-card">
+      <form onsubmit="event.preventDefault(); alert('Merci ! Votre demande a été préparée. Connectez ce formulaire à votre e-mail, WhatsApp ou serveur avant la mise en production.');">
+        <input required placeholder="Nom complet">
+        <input required type="email" placeholder="E-mail">
+        <input placeholder="Téléphone">
+        <select required>
+          <option value="">Choisissez un service</option>
+          <option>Suivi de chantier</option><option>Matériaux de construction</option>
+          <option>Véhicule avec chauffeur</option><option>Accueil VIP / aéroport</option>
+          <option>Transport & accompagnement</option><option>Hébergement</option>
+          <option>Tourisme</option><option>Événement</option><option>Autre demande</option>
+        </select>
+        <textarea required placeholder="Décrivez votre demande..."></textarea>
+        <button class="btn primary" type="submit">Envoyer la demande</button>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container foot">
+  <span>© 2026 Make Well Services. Tous droits réservés.</span>
+  <span>Votre partenaire pour des prestations professionnelles sur mesure.</span>
+</div>
+</footer>
+<script>
+const menu=document.querySelector('.menu'), nav=document.querySelector('nav');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
