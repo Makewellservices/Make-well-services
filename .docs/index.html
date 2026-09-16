@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Make Well Services | Burundi</title>
+
+  <meta name="description" content="Make Well Services - Votre partenaire pour des prestations professionnelles sur mesure au Burundi.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #050505;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #050505;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #b8860b;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+      color: #d4af37;
+      letter-spacing: 4px;
+    }
+
+    .company-name {
+      color: white;
+      font-size: 18px;
+      margin-top: 3px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at center, #211b08 0%, #050505 55%);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #d4af37;
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #dddddd;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 8px;
+      background: #d4af37;
+      color: #050505;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #f0cf5c;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #d4af37;
+      border: 1px solid #d4af37;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #d4af37;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .section-intro {
+      text-align: center;
+      color: #cccccc;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #111111;
+      border: 1px solid #292929;
+      padding: 25px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      border-color: #d4af37;
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #cccccc;
+      font-size: 15px;
+    }
+
+    .contact-box {
+      text-align: center;
+      background: #111111;
+      border: 1px solid #d4af37;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    .contact-box p {
+      margin: 10px 0;
+    }
+
+    .contact-box strong {
+      color: #d4af37;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #000000;
+      border-top: 1px solid #292929;
+      color: #999999;
+    }
+
+    footer span {
+      color: #d4af37;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero h2 {
+        font-size: 20px;
+      }
+
+      nav a {
+        font-size: 12px;
+        margin: 0 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">MWS</div>
+    <div class="company-name">MAKE WELL SERVICES</div>
+
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- ACCUEIL -->
+  <section class="hero" id="accueil">
+    <div class="hero-content">
+
+      <div class="logo" style="font-size:60px; margin-bottom:10px;">
+        MWS
+      </div>
+
+      <h1>MAKE WELL SERVICES</h1>
+
+      <h2>Votre partenaire pour des prestations professionnelles sur mesure.</h2>
+
+      <p>
+        Nous accompagnons particuliers, entreprises, visiteurs,
+        diaspora et investisseurs avec des solutions pratiques,
+        professionnelles et adaptées à leurs besoins au Burundi.
+      </p>
+
+      <a href="#services" class="btn">Découvrir nos services</a>
+
+      <a href="#contact" class="btn btn-outline">Nous contacter</a>
+
+    </div>
+  </section>
+
+
+  <!-- À PROPOS -->
+  <section id="apropos">
+
+    <h2 class="section-title">À propos de Make Well Services</h2>
+
+    <p class="section-intro">
+      Make Well Services est une maison mère basée au Burundi qui
+      centralise et coordonne différentes prestations pour offrir
+      à ses clients un accompagnement professionnel et personnalisé.
+    </p>
+
+    <div class="about">
+
+      <p>
+        Notre objectif est de faciliter les projets, déplacements,
+        séjours et besoins professionnels de nos clients grâce à
+        un réseau de partenaires et à une organisation structurée.
+      </p>
+
+      <br>
+
+      <p>
+        Nous travaillons avec des particuliers, entreprises,
+        visiteurs, membres de la diaspora et investisseurs.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <h2 class="section-title">Nos services</h2>
+
+    <p class="section-intro">
+      Des prestations adaptées à vos besoins, avec un accompagnement
+      professionnel du début à la fin.
+    </p>
+
+    <div class="services">
+
+      <div class="service-card">
+        <h3>Construction</h3>
+        <p>
+          Suivi de chantier et fourniture de matériaux de construction,
+          sable et gravier avec nos propres camions.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Transport</h3>
+        <p>
+          Location de véhicules avec chauffeurs et coordination
+          de véhicules adaptés à vos besoins.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Accueil VIP</h3>
+        <p>
+          Accueil et assistance à l'aéroport ainsi qu'un accompagnement
+          personnalisé pour vos déplacements au Burundi.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Diaspora</h3>
+        <p>
+          Accompagnement des membres de la diaspora pour leurs projets,
+          déplacements et besoins au Burundi.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Hébergement</h3>
+        <p>
+          Recherche et coordination de maisons, hôtels et solutions
+          d'hébergement adaptées à vos besoins.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Tourisme</h3>
+        <p>
+          Organisation de visites, déplacements touristiques
+          et accompagnement pour découvrir le Burundi.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Événementiel</h3>
+        <p>
+          Organisation, décoration et mise à disposition de serveurs
+          professionnels pour mariages, réunions et événements.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Fournitures</h3>
+        <p>
+          Fourniture de matériel de bureau, impression,
+          photocopie, reliure et autres besoins professionnels.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Services personnalisés</h3>
+        <p>
+          Vous avez une demande particulière ? Nous recherchons
+          une solution adaptée à votre besoin.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <h2 class="section-title">Contactez-nous</h2>
+
+    <div class="contact-box">
+
+      <p>
+        <strong>MAKE WELL SERVICES</strong>
+      </p>
+
+      <p>
+        Burundi
+      </p>
+
+      <p>
+        Téléphone : <strong>+257 61 67 02 47</strong>
+      </p>
+
+      <p>
+        Email : <strong>hakizimanamakewell@gmail.com</strong>
+      </p>
+
+      <br>
+
+      <a
+        href="https://wa.me/25761670247"
+        class="btn"
+        target="_blank">
+        WhatsApp
+      </a>
+
+      <a
+        href="mailto:hakizimanamakewell@gmail.com"
+        class="btn btn-outline">
+        Envoyer un email
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 <span>Make Well Services</span>. Tous droits réservés.
+    </p>
+
+    <p>
+      Votre partenaire pour des prestations professionnelles sur mesure.
+    </p>
+
+  </footer>
+
+</body>
+</html>
