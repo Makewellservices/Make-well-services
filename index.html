@@ -201,20 +201,28 @@ section{padding:65px 0}
       <p style="margin-top:25px;color:#888">Ajoutez ici vos coordonnées officielles, adresse, téléphone, e-mail et liens sociaux avant la mise en ligne.</p>
     </div>
     <div class="contact-card">
-      <form action="https://formspree.io/f/maennyky" method="POST">
-        <input required placeholder="Nom complet">
-        <input required type="email" placeholder="E-mail">
-        <input placeholder="Téléphone">
-        <select required>
-          <option value="">Choisissez un service</option>
-          <option>Suivi de chantier</option><option>Matériaux de construction</option>
-          <option>Véhicule avec chauffeur</option><option>Accueil VIP / aéroport</option>
-          <option>Transport & accompagnement</option><option>Hébergement</option>
-          <option>Tourisme</option><option>Événement</option><option>Autre demande</option>
-        </select>
-        <textarea required placeholder="Décrivez votre demande..."></textarea>
-        <button class="btn primary" type="submit">Envoyer la demande</button>
-      </form>
+    <form action="https://formspree.io/f/maennyky" method="POST">
+  <input type="text" name="nom" required placeholder="Nom complet">
+  <input type="email" name="email" required placeholder="E-mail">
+  <input type="tel" name="telephone" placeholder="Téléphone">
+
+  <select name="service" required>
+    <option value="">Choisissez un service</option>
+    <option>Suivi de chantier</option>
+    <option>Matériaux de construction</option>
+    <option>Véhicule avec chauffeur</option>
+    <option>Accueil VIP / aéroport</option>
+    <option>Transport & accompagnement</option>
+    <option>Hébergement</option>
+    <option>Tourisme</option>
+    <option>Événement</option>
+    <option>Autre demande</option>
+  </select>
+
+  <textarea name="message" required placeholder="Décrivez votre demande..."></textarea>
+
+  <button class="btn primary" type="submit">Envoyer la demande</button>
+</form>
     </div>
   </div>
 </div>
