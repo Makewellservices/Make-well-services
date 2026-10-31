@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
 <meta charset="UTF-8">
@@ -19,6 +20,10 @@ content="Hakizimana Make Well - CEO, Make Well Services">
 <title>Make Well Services | Services professionnels au Burundi</title>
 
 <style>
+
+/* =========================
+   IDENTITÉ VISUELLE
+========================= */
 
 :root {
 --gold:#d9a928;
@@ -62,7 +67,9 @@ max-width:1150px;
 margin:auto;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
 position:sticky;
@@ -119,7 +126,9 @@ font-size:28px;
 cursor:pointer;
 }
 
-/* ACCUEIL */
+/* =========================
+   ACCUEIL
+========================= */
 
 .hero {
 min-height:620px;
@@ -128,6 +137,7 @@ grid-template-columns:1fr 1fr;
 align-items:center;
 gap:35px;
 padding:80px 0;
+
 background:
 radial-gradient(circle at 80% 40%,#33270d,transparent 40%),
 linear-gradient(120deg,#050505,#111);
@@ -168,7 +178,9 @@ width:min(420px,90%);
 filter:drop-shadow(0 0 25px #d9a92833);
 }
 
-/* BOUTONS */
+/* =========================
+   BOUTONS
+========================= */
 
 .btn {
 display:inline-block;
@@ -193,7 +205,14 @@ border:1px solid var(--gold);
 color:white;
 }
 
-/* SECTIONS */
+.btn-outline:hover {
+background:var(--gold);
+color:black;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 
 section {
 padding:85px 0;
@@ -219,7 +238,9 @@ color:var(--muted);
 max-width:750px;
 }
 
-/* A PROPOS */
+/* =========================
+   À PROPOS
+========================= */
 
 .about {
 background:#0b0b0b;
@@ -247,7 +268,9 @@ border-radius:10px;
 margin-bottom:12px;
 }
 
-/* DIRECTION */
+/* =========================
+   DIRECTION
+========================= */
 
 .ceo-card {
 display:flex;
@@ -273,7 +296,9 @@ font-size:27px;
 color:#bbb;
 }
 
-/* SERVICES */
+/* =========================
+   SERVICES
+========================= */
 
 .services {
 background:#080808;
@@ -282,7 +307,8 @@ background:#080808;
 .cards {
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:24px;
+gap:25px;
+align-items:stretch;
 }
 
 .card {
@@ -290,44 +316,71 @@ background:#121212;
 border:1px solid #292929;
 border-radius:12px;
 overflow:hidden;
-transition:.3s;
+
+display:flex;
+flex-direction:column;
+
+transition:.3s ease;
 }
 
 .card:hover {
-transform:translateY(-5px);
+transform:translateY(-6px);
 border-color:var(--gold);
+box-shadow:0 8px 25px #d9a92822;
 }
+
+/* IMAGES DES SERVICES */
 
 .card img {
 width:100%;
-height:220px;
+height:240px;
+
 object-fit:cover;
+object-position:center;
+
 display:block;
-background:#202020;
+background:#252525;
+
+transition:transform .4s ease;
+}
+
+.card:hover img {
+transform:scale(1.04);
 }
 
 .card-content {
-padding:22px;
+padding:23px;
+
+flex:1;
+
+display:flex;
+flex-direction:column;
 }
 
 .card h3 {
 color:var(--gold2);
-margin-bottom:10px;
+margin-bottom:12px;
 font-size:19px;
+line-height:1.4;
 }
 
 .card p {
 font-size:14px;
 color:#bbb;
+line-height:1.8;
+flex:1;
 }
 
 .card .tag {
 display:inline-block;
-margin-top:15px;
+margin-top:18px;
 color:var(--gold2);
 font-size:12px;
 font-weight:bold;
+letter-spacing:1px;
 }
+
+/* CARTE LOCATION */
 
 .v8 {
 border:2px solid var(--gold);
@@ -337,7 +390,9 @@ border:2px solid var(--gold);
 background:linear-gradient(120deg,#17130a,#101010);
 }
 
-/* DIASPORA */
+/* =========================
+   DIASPORA
+========================= */
 
 .diaspora {
 background:linear-gradient(120deg,#151007,#080808);
@@ -367,7 +422,9 @@ margin-bottom:10px;
 color:#bbb;
 }
 
-/* METHODE */
+/* =========================
+   MÉTHODE
+========================= */
 
 .process {
 display:grid;
@@ -387,12 +444,18 @@ color:var(--gold2);
 font-size:25px;
 }
 
+.step h3 {
+margin:8px 0;
+}
+
 .step p {
 color:#bbb;
 font-size:14px;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
 background:#0b0b0b;
@@ -426,10 +489,13 @@ textarea {
 width:100%;
 padding:14px;
 margin-bottom:14px;
+
 background:#080808;
 color:white;
+
 border:1px solid #393939;
 border-radius:5px;
+
 font:inherit;
 }
 
@@ -463,7 +529,9 @@ color:var(--gold2);
 margin-top:12px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
 padding:30px 0;
@@ -478,7 +546,9 @@ footer p {
 margin:6px;
 }
 
-/* MOBILE */
+/* =========================
+   TABLETTES
+========================= */
 
 @media(max-width:850px) {
 
@@ -527,6 +597,10 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
+/* =========================
+   TÉLÉPHONES
+========================= */
+
 @media(max-width:560px) {
 
 .cards,
@@ -553,7 +627,35 @@ font-size:13px;
 }
 
 .card img {
-height:220px;
+height:230px;
+}
+
+.card-content {
+padding:20px;
+}
+
+.btn {
+margin:5px 2px;
+}
+
+}
+
+/* =========================
+   PETITS ÉCRANS
+========================= */
+
+@media(max-width:360px) {
+
+.brand {
+font-size:11px;
+}
+
+.hero h1 {
+font-size:36px;
+}
+
+.section-title h2 {
+font-size:27px;
 }
 
 }
@@ -563,6 +665,10 @@ height:220px;
 </head>
 
 <body>
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -598,7 +704,9 @@ aria-expanded="false">☰</button>
 
 <main>
 
-<!-- ACCUEIL -->
+<!-- =========================
+     ACCUEIL
+========================= -->
 
 <section class="hero" id="accueil">
 
@@ -644,7 +752,9 @@ alt="Make Well Services">
 
 </section>
 
-<!-- A PROPOS -->
+<!-- =========================
+     À PROPOS
+========================= -->
 
 <section class="about" id="apropos">
 
@@ -706,7 +816,9 @@ pour assurer la réalisation et le suivi des prestations.
 
 </section>
 
-<!-- DIRECTION -->
+<!-- =========================
+     DIRECTION
+========================= -->
 
 <section id="direction">
 
@@ -745,7 +857,9 @@ de Make Well Services au Burundi.
 
 </section>
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section class="services" id="services">
 
@@ -766,7 +880,7 @@ des particuliers, entreprises et visiteurs.
 
 <div class="cards">
 
-<!-- CONSTRUCTION -->
+<!-- 1 CONSTRUCTION -->
 
 <article class="card">
 
@@ -789,7 +903,7 @@ pour vos projets de construction.
 
 </article>
 
-<!-- MATERIAUX -->
+<!-- 2 MATERIAUX -->
 
 <article class="card">
 
@@ -812,7 +926,7 @@ de construction avec nos propres camions et partenaires.
 
 </article>
 
-<!-- LOCATION VEHICULES -->
+<!-- 3 LOCATION VEHICULES -->
 
 <article class="card v8">
 
@@ -837,7 +951,7 @@ avec ou sans chauffeur selon vos besoins.
 
 </article>
 
-<!-- MAISONS DE PASSAGE -->
+<!-- 4 MAISONS DE PASSAGE -->
 
 <article class="card">
 
@@ -860,7 +974,7 @@ vos préférences et la durée de votre séjour au Burundi.
 
 </article>
 
-<!-- ACCUEIL VIP -->
+<!-- 5 ACCUEIL VIP -->
 
 <article class="card">
 
@@ -884,7 +998,7 @@ Nous facilitons votre arrivée au Burundi.
 
 </article>
 
-<!-- TRANSPORT -->
+<!-- 6 TRANSPORT -->
 
 <article class="card">
 
@@ -907,7 +1021,7 @@ pour les voyageurs, visiteurs et diaspora.
 
 </article>
 
-<!-- TOURISME -->
+<!-- 7 TOURISME -->
 
 <article class="card">
 
@@ -931,7 +1045,7 @@ et les tambourinaires traditionnels.
 
 </article>
 
-<!-- ORGANISATION EVENEMENTIELLE -->
+<!-- 8 ORGANISATION EVENEMENTIELLE -->
 
 <article class="card">
 
@@ -955,7 +1069,7 @@ pour mariages, réunions et cérémonies.
 
 </article>
 
-<!-- EQUIPE EVENEMENTIELLE -->
+<!-- 9 EQUIPE EVENEMENTIELLE -->
 
 <article class="card">
 
@@ -980,7 +1094,7 @@ mariages, réunions et événements.
 
 </article>
 
-<!-- MATERIEL DE BUREAU -->
+<!-- 10 MATERIEL DE BUREAU -->
 
 <article class="card">
 
@@ -1003,7 +1117,7 @@ reliure et équipements administratifs.
 
 </article>
 
-<!-- APPELS D'OFFRES -->
+<!-- 11 APPELS D'OFFRES -->
 
 <article class="card">
 
@@ -1026,7 +1140,7 @@ Fourniture de matériels et produits nécessaires
 
 </article>
 
-<!-- SERVICES PERSONNALISES -->
+<!-- 12 SERVICES PERSONNALISES -->
 
 <article class="card">
 
@@ -1056,7 +1170,9 @@ une solution adaptée.
 
 </section>
 
-<!-- DIASPORA -->
+<!-- =========================
+     DIASPORA
+========================= -->
 
 <section class="diaspora" id="diaspora">
 
@@ -1117,7 +1233,9 @@ et à vos objectifs.
 
 </section>
 
-<!-- METHODE -->
+<!-- =========================
+     METHODE
+========================= -->
 
 <section>
 
@@ -1134,27 +1252,51 @@ et à vos objectifs.
 <div class="process">
 
 <div class="step">
+
 <b>01</b>
+
 <h3>Demande</h3>
-<p>Vous nous présentez votre besoin.</p>
+
+<p>
+Vous nous présentez votre besoin.
+</p>
+
 </div>
 
 <div class="step">
+
 <b>02</b>
+
 <h3>Analyse</h3>
-<p>Nous étudions votre demande.</p>
+
+<p>
+Nous étudions votre demande.
+</p>
+
 </div>
 
 <div class="step">
+
 <b>03</b>
+
 <h3>Organisation</h3>
-<p>Nous coordonnons les ressources nécessaires.</p>
+
+<p>
+Nous coordonnons les ressources nécessaires.
+</p>
+
 </div>
 
 <div class="step">
+
 <b>04</b>
+
 <h3>Réalisation</h3>
-<p>Nous assurons le suivi de la prestation.</p>
+
+<p>
+Nous assurons le suivi de la prestation.
+</p>
+
 </div>
 
 </div>
@@ -1163,7 +1305,9 @@ et à vos objectifs.
 
 </section>
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section class="contact" id="contact">
 
@@ -1183,6 +1327,8 @@ Envoyez votre demande à Make Well Services.
 </div>
 
 <div class="contact-grid">
+
+<!-- COORDONNEES -->
 
 <div class="contact-box">
 
@@ -1211,26 +1357,34 @@ Hakizimana Make Well — CEO
 
 <p>
 <strong>Email :</strong>
+
 <a href="mailto:makewellburundi@gmail.com">
 makewellburundi@gmail.com
 </a>
+
 </p>
 
 <p>
 <strong>Téléphone :</strong>
+
 <a href="tel:+25766170257">
 +257 66170257
 </a>
+
 </p>
 
 <a class="btn btn-primary"
 href="https://wa.me/25766170257"
 target="_blank"
 rel="noopener">
+
 Nous contacter sur WhatsApp
+
 </a>
 
 </div>
+
+<!-- FORMULAIRE -->
 
 <div class="contact-box">
 
@@ -1261,17 +1415,29 @@ autocomplete="tel">
 <select name="service" required>
 
 <option value="">Choisissez un service</option>
+
 <option>Suivi de chantier</option>
+
 <option>Matériaux de construction</option>
+
 <option>Location de véhicule</option>
+
 <option>Maisons de passage</option>
+
 <option>Accueil VIP</option>
+
 <option>Transport</option>
+
 <option>Tourisme</option>
+
 <option>Organisation d'événements</option>
+
 <option>Équipe événementielle</option>
+
 <option>Matériel de bureau</option>
+
 <option>Soumissions et appels d'offres</option>
+
 <option>Services personnalisés</option>
 
 </select>
@@ -1282,7 +1448,9 @@ placeholder="Décrivez votre demande..."
 required></textarea>
 
 <button class="btn btn-primary" type="submit">
+
 Envoyer ma demande
+
 </button>
 
 </form>
@@ -1301,7 +1469,9 @@ aria-live="polite"></p>
 
 </main>
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1323,11 +1493,16 @@ Votre partenaire pour des prestations professionnelles sur mesure.
 
 </footer>
 
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
 <script>
 
 /* MENU MOBILE */
 
 const menu = document.querySelector('.menu');
+
 const nav = document.querySelector('nav');
 
 menu.addEventListener('click', () => {
