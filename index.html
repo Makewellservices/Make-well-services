@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +8,7 @@
 content="i64b5YtWZTjfZ2atX_0iQZWZ6RnrD0_BETiLOhqqcEU">
 
 <meta name="description"
-content="Make Well Services, votre partenaire pour des prestations professionnelles sur mesure au Burundi. Construction, transport, location de véhicules, maisons de passage, tourisme, événements et fournitures professionnelles.">
+content="Make Well Services, votre partenaire pour des prestations professionnelles sur mesure au Burundi.">
 
 <meta name="author"
 content="Hakizimana Make Well - CEO, Make Well Services">
@@ -20,16 +18,10 @@ content="Hakizimana Make Well - CEO, Make Well Services">
 <title>Make Well Services | Services professionnels au Burundi</title>
 
 <style>
-
-/* =========================
-   IDENTITÉ VISUELLE
-========================= */
-
 :root {
 --gold:#d9a928;
 --gold2:#f4c64e;
 --black:#050505;
---dark:#101010;
 --white:#ffffff;
 --muted:#bcbcbc;
 }
@@ -67,9 +59,7 @@ max-width:1150px;
 margin:auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header {
 position:sticky;
@@ -110,7 +100,6 @@ flex-wrap:wrap;
 
 nav a {
 font-size:13px;
-transition:.3s;
 }
 
 nav a:hover {
@@ -123,12 +112,9 @@ background:none;
 border:0;
 color:white;
 font-size:28px;
-cursor:pointer;
 }
 
-/* =========================
-   ACCUEIL
-========================= */
+/* ACCUEIL */
 
 .hero {
 min-height:620px;
@@ -137,7 +123,6 @@ grid-template-columns:1fr 1fr;
 align-items:center;
 gap:35px;
 padding:80px 0;
-
 background:
 radial-gradient(circle at 80% 40%,#33270d,transparent 40%),
 linear-gradient(120deg,#050505,#111);
@@ -178,9 +163,7 @@ width:min(420px,90%);
 filter:drop-shadow(0 0 25px #d9a92833);
 }
 
-/* =========================
-   BOUTONS
-========================= */
+/* BOUTONS */
 
 .btn {
 display:inline-block;
@@ -205,14 +188,7 @@ border:1px solid var(--gold);
 color:white;
 }
 
-.btn-outline:hover {
-background:var(--gold);
-color:black;
-}
-
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 section {
 padding:85px 0;
@@ -238,9 +214,7 @@ color:var(--muted);
 max-width:750px;
 }
 
-/* =========================
-   À PROPOS
-========================= */
+/* A PROPOS */
 
 .about {
 background:#0b0b0b;
@@ -268,9 +242,7 @@ border-radius:10px;
 margin-bottom:12px;
 }
 
-/* =========================
-   DIRECTION
-========================= */
+/* DIRECTION */
 
 .ceo-card {
 display:flex;
@@ -296,9 +268,7 @@ font-size:27px;
 color:#bbb;
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* SERVICES */
 
 .services {
 background:#080808;
@@ -316,11 +286,9 @@ background:#121212;
 border:1px solid #292929;
 border-radius:12px;
 overflow:hidden;
-
 display:flex;
 flex-direction:column;
-
-transition:.3s ease;
+transition:.3s;
 }
 
 .card:hover {
@@ -329,30 +297,20 @@ border-color:var(--gold);
 box-shadow:0 8px 25px #d9a92822;
 }
 
-/* IMAGES DES SERVICES */
+/* IMAGES */
 
 .card img {
 width:100%;
 height:240px;
-
 object-fit:cover;
 object-position:center;
-
 display:block;
 background:#252525;
-
-transition:transform .4s ease;
-}
-
-.card:hover img {
-transform:scale(1.04);
 }
 
 .card-content {
 padding:23px;
-
 flex:1;
-
 display:flex;
 flex-direction:column;
 }
@@ -380,8 +338,6 @@ font-weight:bold;
 letter-spacing:1px;
 }
 
-/* CARTE LOCATION */
-
 .v8 {
 border:2px solid var(--gold);
 }
@@ -390,9 +346,7 @@ border:2px solid var(--gold);
 background:linear-gradient(120deg,#17130a,#101010);
 }
 
-/* =========================
-   DIASPORA
-========================= */
+/* DIASPORA */
 
 .diaspora {
 background:linear-gradient(120deg,#151007,#080808);
@@ -422,9 +376,7 @@ margin-bottom:10px;
 color:#bbb;
 }
 
-/* =========================
-   MÉTHODE
-========================= */
+/* METHODE */
 
 .process {
 display:grid;
@@ -453,9 +405,7 @@ color:#bbb;
 font-size:14px;
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact {
 background:#0b0b0b;
@@ -483,19 +433,14 @@ margin:10px 0;
 color:var(--gold2);
 }
 
-input,
-select,
-textarea {
+input,select,textarea {
 width:100%;
 padding:14px;
 margin-bottom:14px;
-
 background:#080808;
 color:white;
-
 border:1px solid #393939;
 border-radius:5px;
-
 font:inherit;
 }
 
@@ -504,24 +449,14 @@ min-height:130px;
 resize:vertical;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-outline:1px solid var(--gold);
-}
-
-button {
-cursor:pointer;
-}
-
 form button {
 width:100%;
 border:none;
+cursor:pointer;
 }
 
 form button:disabled {
 opacity:.6;
-cursor:not-allowed;
 }
 
 #form-status {
@@ -529,9 +464,7 @@ color:var(--gold2);
 margin-top:12px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
 padding:30px 0;
@@ -546,12 +479,9 @@ footer p {
 margin:6px;
 }
 
-/* =========================
-   TABLETTES
-========================= */
+/* RESPONSIVE */
 
 @media(max-width:850px) {
-
 .nav {
 flex-wrap:wrap;
 }
@@ -585,27 +515,17 @@ order:-1;
 grid-template-columns:repeat(2,1fr);
 }
 
-.about-grid,
-.contact-grid {
+.about-grid,.contact-grid {
 grid-template-columns:1fr;
 }
 
-.process,
-.diaspora-grid {
+.process,.diaspora-grid {
 grid-template-columns:repeat(2,1fr);
 }
-
 }
 
-/* =========================
-   TÉLÉPHONES
-========================= */
-
 @media(max-width:560px) {
-
-.cards,
-.process,
-.diaspora-grid {
+.cards,.process,.diaspora-grid {
 grid-template-columns:1fr;
 }
 
@@ -629,23 +549,9 @@ font-size:13px;
 .card img {
 height:230px;
 }
-
-.card-content {
-padding:20px;
 }
-
-.btn {
-margin:5px 2px;
-}
-
-}
-
-/* =========================
-   PETITS ÉCRANS
-========================= */
 
 @media(max-width:360px) {
-
 .brand {
 font-size:11px;
 }
@@ -653,70 +559,50 @@ font-size:11px;
 .hero h1 {
 font-size:36px;
 }
-
-.section-title h2 {
-font-size:27px;
 }
 
-}
+/* MASQUER LES IMAGES QUI NE CHARGENT PAS */
 
+.card img.image-error {
+display:none;
+}
 </style>
-
 </head>
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
-
 <div class="container nav">
 
 <a href="#accueil" class="brand">
-
-<img src="logo.png"
-alt="Logo officiel Make Well Services">
-
+<img src="logo.png" alt="Logo Make Well Services">
 MAKE WELL SERVICES
-
 </a>
 
-<button class="menu"
-aria-label="Ouvrir le menu"
+<button class="menu" aria-label="Ouvrir le menu"
 aria-expanded="false">☰</button>
 
 <nav aria-label="Navigation principale">
-
 <a href="#accueil">Accueil</a>
 <a href="#apropos">À propos</a>
 <a href="#direction">Direction</a>
 <a href="#services">Services</a>
 <a href="#diaspora">Diaspora</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 </div>
-
 </header>
 
 <main>
 
-<!-- =========================
-     ACCUEIL
-========================= -->
+<!-- ACCUEIL -->
 
 <section class="hero" id="accueil">
-
 <div class="container hero-content">
 
 <div>
-
-<span class="badge">
-BURUNDI · SERVICES PROFESSIONNELS
-</span>
+<span class="badge">BURUNDI · SERVICES PROFESSIONNELS</span>
 
 <h1>
 Votre partenaire
@@ -731,660 +617,373 @@ pour les particuliers, entreprises, visiteurs, diaspora
 et investisseurs.
 </p>
 
-<a href="#contact" class="btn btn-primary">
-Demander un service
-</a>
-
-<a href="#services" class="btn btn-outline">
-Nos activités
-</a>
-
+<a href="#contact" class="btn btn-primary">Demander un service</a>
+<a href="#services" class="btn btn-outline">Nos activités</a>
 </div>
 
 <div class="hero-logo">
-
-<img src="logo.png"
-alt="Make Well Services">
-
+<img src="logo.png" alt="Make Well Services">
 </div>
 
 </div>
-
 </section>
 
-<!-- =========================
-     À PROPOS
-========================= -->
+<!-- A PROPOS -->
 
 <section class="about" id="apropos">
-
 <div class="container">
 
 <div class="section-title">
-
 <small>À PROPOS</small>
-
 <h2>Qui sommes-nous ?</h2>
-
-<p>
-Un partenaire pour plusieurs besoins professionnels au Burundi.
-</p>
-
+<p>Un partenaire pour plusieurs besoins professionnels au Burundi.</p>
 </div>
 
 <div class="about-grid">
 
 <div>
-
-<p>
-<strong>Make Well Services</strong> est une entreprise
+<p><strong>Make Well Services</strong> est une entreprise
 basée au Burundi, qui développe et coordonne différentes
-activités de services.
-</p>
+activités de services.</p>
 
-<p>
-Notre objectif est de proposer des solutions pratiques,
-professionnelles et adaptées aux besoins de chaque client.
-</p>
+<p>Notre objectif est de proposer des solutions pratiques,
+professionnelles et adaptées aux besoins de chaque client.</p>
 
-<p>
-Nous travaillons avec des partenaires et fournisseurs
-pour assurer la réalisation et le suivi des prestations.
-</p>
-
+<p>Nous travaillons avec des partenaires et fournisseurs
+pour assurer la réalisation et le suivi des prestations.</p>
 </div>
 
 <div class="info">
-
 <p><strong>Entreprise :</strong> Make Well Services</p>
-
 <p><strong>Direction :</strong> Hakizimana Make Well</p>
-
 <p><strong>Positionnement :</strong> Maison mère basée au Burundi</p>
-
 <p><strong>Zone d'intervention :</strong> Burundi</p>
-
 <p><strong>RC :</strong> 0075864/25</p>
-
 <p><strong>NIF :</strong> 4003242486</p>
-
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-<!-- =========================
-     DIRECTION
-========================= -->
+<!-- DIRECTION -->
 
 <section id="direction">
-
 <div class="container">
 
 <div class="section-title">
-
 <small>NOTRE DIRECTION</small>
-
 <h2>Direction générale</h2>
-
 </div>
 
 <div class="ceo-card">
 
-<img src="logo.png"
-alt="Logo Make Well Services">
+<img src="logo.png" alt="Logo Make Well Services">
 
 <div>
-
 <h3>Hakizimana Make Well</h3>
-
 <p class="gold">CEO — Make Well Services</p>
-
-<p>
-La direction générale assure l'orientation stratégique,
+<p>La direction générale assure l'orientation stratégique,
 la coordination des activités et le développement
-de Make Well Services au Burundi.
-</p>
-
+de Make Well Services au Burundi.</p>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-<!-- =========================
-     SERVICES
-========================= -->
+<!-- SERVICES -->
 
 <section class="services" id="services">
-
 <div class="container">
 
 <div class="section-title">
-
 <small>NOS ACTIVITÉS</small>
-
 <h2>Nos services professionnels</h2>
-
-<p>
-Des solutions organisées pour répondre aux besoins
-des particuliers, entreprises et visiteurs.
-</p>
-
+<p>Des solutions organisées pour répondre aux besoins
+des particuliers, entreprises et visiteurs.</p>
 </div>
 
 <div class="cards">
 
-<!-- 1 CONSTRUCTION -->
-
 <article class="card">
-
 <img loading="lazy"
 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900"
 alt="Travaux de construction">
-
 <div class="card-content">
-
 <h3>Suivi de chantier</h3>
-
-<p>
-Suivi, coordination et organisation des travaux
-pour vos projets de construction.
-</p>
-
+<p>Suivi, coordination et organisation des travaux
+pour vos projets de construction.</p>
 <span class="tag">CONSTRUCTION</span>
-
 </div>
-
 </article>
 
-<!-- 2 MATERIAUX -->
-
 <article class="card">
-
 <img loading="lazy"
 src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=900"
 alt="Matériaux et logistique">
-
 <div class="card-content">
-
 <h3>Matériaux & logistique</h3>
-
-<p>
-Fourniture et livraison de sable, gravier et matériaux
-de construction avec nos propres camions et partenaires.
-</p>
-
+<p>Fourniture et livraison de sable, gravier et matériaux
+de construction avec nos propres camions et partenaires.</p>
 <span class="tag">APPROVISIONNEMENT</span>
-
 </div>
-
 </article>
 
-<!-- 3 LOCATION VEHICULES -->
-
 <article class="card v8">
-
 <img loading="lazy"
 src="Location-vehicule.jpg"
 alt="Location de véhicules Make Well Services">
-
 <div class="card-content">
-
 <h3>Location de véhicules</h3>
-
-<p>
-Location de véhicules adaptés à vos déplacements,
+<p>Location de véhicules adaptés à vos déplacements,
 voyages professionnels, missions et événements.
 Nous proposons différents types de véhicules
-avec ou sans chauffeur selon vos besoins.
-</p>
-
+avec ou sans chauffeur selon vos besoins.</p>
 <span class="tag">VÉHICULES & CHAUFFEURS</span>
-
 </div>
-
 </article>
 
-<!-- 4 MAISONS DE PASSAGE -->
+<!-- MAISONS DE PASSAGE : IMAGE LOCALE -->
 
 <article class="card">
-
 <img loading="lazy"
-src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900"
-alt="Maison moderne">
-
+src="maisons%20de%20passage.jpg"
+alt="Maisons de passage Make Well Services">
 <div class="card-content">
-
 <h3>Maisons de passage</h3>
-
-<p>
-Recherche de maisons confortables selon votre budget,
-vos préférences et la durée de votre séjour au Burundi.
-</p>
-
+<p>Recherche de maisons confortables selon votre budget,
+vos préférences et la durée de votre séjour au Burundi.</p>
 <span class="tag">HÉBERGEMENT</span>
-
 </div>
-
 </article>
 
-<!-- 5 ACCUEIL VIP -->
-
 <article class="card">
-
 <img loading="lazy"
 src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=900"
 alt="Voyage et accueil VIP">
-
 <div class="card-content">
-
 <h3>Accueil VIP</h3>
-
-<p>
-Accueil à l'aéroport, assistance, transport
+<p>Accueil à l'aéroport, assistance, transport
 et accompagnement personnalisé des visiteurs.
-Nous facilitons votre arrivée au Burundi.
-</p>
-
+Nous facilitons votre arrivée au Burundi.</p>
 <span class="tag">ACCUEIL & ASSISTANCE</span>
-
 </div>
-
 </article>
 
-<!-- 6 TRANSPORT -->
-
 <article class="card">
-
 <img loading="lazy"
 src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40a?w=900"
 alt="Transport automobile">
-
 <div class="card-content">
-
 <h3>Transport & accompagnement</h3>
-
-<p>
-Déplacements en ville et à l'intérieur du Burundi
-pour les voyageurs, visiteurs et diaspora.
-</p>
-
+<p>Déplacements en ville et à l'intérieur du Burundi
+pour les voyageurs, visiteurs et diaspora.</p>
 <span class="tag">MOBILITÉ</span>
-
 </div>
-
 </article>
 
-<!-- 7 TOURISME -->
-
 <article class="card">
-
 <img loading="lazy"
 src="https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Tambourinaires%20Burundians.jpg"
 alt="Tambourinaires traditionnels du Burundi">
-
 <div class="card-content">
-
 <h3>Tourisme & découverte du Burundi</h3>
-
-<p>
-Organisation de visites touristiques et découverte
+<p>Organisation de visites touristiques et découverte
 de la culture burundaise, notamment les tambours
-et les tambourinaires traditionnels.
-</p>
-
+et les tambourinaires traditionnels.</p>
 <span class="tag">CULTURE & TOURISME</span>
-
 </div>
-
 </article>
 
-<!-- 8 ORGANISATION EVENEMENTIELLE -->
-
 <article class="card">
-
 <img loading="lazy"
 src="evenementiel-organisation.jpg"
 alt="Organisation événementielle Make Well Services">
-
 <div class="card-content">
-
 <h3>Organisation d'événements</h3>
-
-<p>
-Organisation, décoration, équipements et mise
+<p>Organisation, décoration, équipements et mise
 à disposition de serveurs professionnels
-pour mariages, réunions et cérémonies.
-</p>
-
+pour mariages, réunions et cérémonies.</p>
 <span class="tag">ÉVÉNEMENTIEL</span>
-
 </div>
-
 </article>
 
-<!-- 9 EQUIPE EVENEMENTIELLE -->
-
 <article class="card">
-
 <img loading="lazy"
 src="equipe-evenementiel.jpg"
 alt="Équipe événementielle Make Well Services">
-
 <div class="card-content">
-
 <h3>Équipe événementielle</h3>
-
-<p>
-Mise à disposition d'une équipe professionnelle
+<p>Mise à disposition d'une équipe professionnelle
 pour assurer le service, l'accueil des invités
 et l'accompagnement pendant vos cérémonies,
-mariages, réunions et événements.
-</p>
-
+mariages, réunions et événements.</p>
 <span class="tag">ÉQUIPE & SERVICE ÉVÉNEMENTIEL</span>
-
 </div>
-
 </article>
 
-<!-- 10 MATERIEL DE BUREAU -->
-
 <article class="card">
-
 <img loading="lazy"
 src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900"
 alt="Matériel de bureau">
-
 <div class="card-content">
-
 <h3>Matériel de bureau</h3>
-
-<p>
-Fournitures de bureau, impression, photocopie,
-reliure et équipements administratifs.
-</p>
-
+<p>Fournitures de bureau, impression, photocopie,
+reliure et équipements administratifs.</p>
 <span class="tag">FOURNITURES & IMPRESSION</span>
-
 </div>
-
 </article>
 
-<!-- 11 APPELS D'OFFRES -->
-
 <article class="card">
-
 <img loading="lazy"
 src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900"
 alt="Documents professionnels et appels d'offres">
-
 <div class="card-content">
-
 <h3>Soumissions & appels d'offres</h3>
-
-<p>
-Fourniture de matériels et produits nécessaires
-à l'exécution de vos marchés et appels d'offres.
-</p>
-
+<p>Fourniture de matériels et produits nécessaires
+à l'exécution de vos marchés et appels d'offres.</p>
 <span class="tag">FOURNITURES PROFESSIONNELLES</span>
-
 </div>
-
 </article>
 
-<!-- 12 SERVICES PERSONNALISES -->
-
 <article class="card">
-
 <img loading="lazy"
 src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900"
 alt="Services professionnels">
-
 <div class="card-content">
-
 <h3>Services personnalisés</h3>
-
-<p>
-Vous avez une demande particulière ?
+<p>Vous avez une demande particulière ?
 Nous étudions votre besoin pour proposer
-une solution adaptée.
-</p>
-
+une solution adaptée.</p>
 <span class="tag">SOLUTIONS SUR MESURE</span>
-
 </div>
-
 </article>
 
 </div>
-
 </div>
-
 </section>
 
-<!-- =========================
-     DIASPORA
-========================= -->
+<!-- DIASPORA -->
 
 <section class="diaspora" id="diaspora">
-
 <div class="container">
 
 <div class="section-title">
-
 <small>DIASPORA & INVESTISSEURS</small>
-
 <h2>Votre partenaire au Burundi, même à distance.</h2>
-
-<p>
-Nous facilitons la coordination de vos besoins
+<p>Nous facilitons la coordination de vos besoins
 en construction, mobilité, hébergement, accueil
-et services professionnels.
-</p>
-
+et services professionnels.</p>
 </div>
 
 <div class="diaspora-grid">
 
 <div class="diaspora-box">
-
 <h3>01 — Coordination</h3>
-
-<p>
-Un interlocuteur pour organiser plusieurs
-prestations au Burundi.
-</p>
-
+<p>Un interlocuteur pour organiser plusieurs
+prestations au Burundi.</p>
 </div>
 
 <div class="diaspora-box">
-
 <h3>02 — Accompagnement</h3>
-
-<p>
-Un suivi de vos demandes et de vos projets
-selon vos besoins.
-</p>
-
+<p>Un suivi de vos demandes et de vos projets
+selon vos besoins.</p>
 </div>
 
 <div class="diaspora-box">
-
 <h3>03 — Solutions</h3>
-
-<p>
-Des prestations adaptées à votre budget
-et à vos objectifs.
-</p>
-
+<p>Des prestations adaptées à votre budget
+et à vos objectifs.</p>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-<!-- =========================
-     METHODE
-========================= -->
+<!-- METHODE -->
 
 <section>
-
 <div class="container">
 
 <div class="section-title">
-
 <small>NOTRE MÉTHODE</small>
-
 <h2>Votre satisfaction, notre priorité.</h2>
-
 </div>
 
 <div class="process">
 
 <div class="step">
-
 <b>01</b>
-
 <h3>Demande</h3>
-
-<p>
-Vous nous présentez votre besoin.
-</p>
-
+<p>Vous nous présentez votre besoin.</p>
 </div>
 
 <div class="step">
-
 <b>02</b>
-
 <h3>Analyse</h3>
-
-<p>
-Nous étudions votre demande.
-</p>
-
+<p>Nous étudions votre demande.</p>
 </div>
 
 <div class="step">
-
 <b>03</b>
-
 <h3>Organisation</h3>
-
-<p>
-Nous coordonnons les ressources nécessaires.
-</p>
-
+<p>Nous coordonnons les ressources nécessaires.</p>
 </div>
 
 <div class="step">
-
 <b>04</b>
-
 <h3>Réalisation</h3>
-
-<p>
-Nous assurons le suivi de la prestation.
-</p>
-
+<p>Nous assurons le suivi de la prestation.</p>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
-
 <div class="container">
 
 <div class="section-title">
-
 <small>CONTACTEZ-NOUS</small>
-
 <h2>Parlons de votre projet.</h2>
-
-<p>
-Vous avez besoin d'un service ?
-Envoyez votre demande à Make Well Services.
-</p>
-
+<p>Vous avez besoin d'un service ?
+Envoyez votre demande à Make Well Services.</p>
 </div>
 
 <div class="contact-grid">
-
-<!-- COORDONNEES -->
 
 <div class="contact-box">
 
 <h2 class="gold">MAKE WELL SERVICES</h2>
 
-<p>
-Votre partenaire pour des prestations professionnelles sur mesure.
-</p>
+<p>Votre partenaire pour des prestations professionnelles sur mesure.</p>
 
-<p>
-<strong>Direction :</strong>
-Hakizimana Make Well — CEO
-</p>
+<p><strong>Direction :</strong>
+Hakizimana Make Well — CEO</p>
 
-<p>
-<strong>Localisation :</strong> Burundi
-</p>
+<p><strong>Localisation :</strong> Burundi</p>
 
-<p>
-<strong>RC :</strong> 0075864/25
-</p>
+<p><strong>RC :</strong> 0075864/25</p>
 
-<p>
-<strong>NIF :</strong> 4003242486
-</p>
+<p><strong>NIF :</strong> 4003242486</p>
 
-<p>
-<strong>Email :</strong>
-
+<p><strong>Email :</strong>
 <a href="mailto:makewellburundi@gmail.com">
-makewellburundi@gmail.com
-</a>
+makewellburundi@gmail.com</a></p>
 
-</p>
-
-<p>
-<strong>Téléphone :</strong>
-
-<a href="tel:+25766170257">
-+257 66170257
-</a>
-
-</p>
+<p><strong>Téléphone :</strong>
+<a href="tel:+25766170257">+257 66170257</a></p>
 
 <a class="btn btn-primary"
 href="https://wa.me/25766170257"
-target="_blank"
-rel="noopener">
-
+target="_blank" rel="noopener">
 Nous contacter sur WhatsApp
-
 </a>
 
 </div>
-
-<!-- FORMULAIRE -->
 
 <div class="contact-box">
 
@@ -1392,198 +991,128 @@ Nous contacter sur WhatsApp
 action="https://formspree.io/f/maennyky"
 method="POST">
 
-<input
-type="text"
-name="nom"
+<input type="text" name="nom"
 placeholder="Votre nom complet"
-autocomplete="name"
-required>
+autocomplete="name" required>
 
-<input
-type="email"
-name="email"
+<input type="email" name="email"
 placeholder="Votre adresse e-mail"
-autocomplete="email"
-required>
+autocomplete="email" required>
 
-<input
-type="tel"
-name="telephone"
+<input type="tel" name="telephone"
 placeholder="Votre numéro de téléphone"
 autocomplete="tel">
 
 <select name="service" required>
-
 <option value="">Choisissez un service</option>
-
 <option>Suivi de chantier</option>
-
 <option>Matériaux de construction</option>
-
 <option>Location de véhicule</option>
-
 <option>Maisons de passage</option>
-
 <option>Accueil VIP</option>
-
 <option>Transport</option>
-
 <option>Tourisme</option>
-
 <option>Organisation d'événements</option>
-
 <option>Équipe événementielle</option>
-
 <option>Matériel de bureau</option>
-
 <option>Soumissions et appels d'offres</option>
-
 <option>Services personnalisés</option>
-
 </select>
 
-<textarea
-name="message"
+<textarea name="message"
 placeholder="Décrivez votre demande..."
 required></textarea>
 
 <button class="btn btn-primary" type="submit">
-
 Envoyer ma demande
-
 </button>
 
 </form>
 
-<p id="form-status"
-role="status"
+<p id="form-status" role="status"
 aria-live="polite"></p>
 
 </div>
-
 </div>
-
 </div>
-
 </section>
 
 </main>
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
-
 <div class="container">
-
-<p>
-© 2026 Make Well Services — Tous droits réservés.
-</p>
-
-<p>
-Hakizimana Make Well — CEO
-</p>
-
-<p>
-Votre partenaire pour des prestations professionnelles sur mesure.
-</p>
-
+<p>© 2026 Make Well Services — Tous droits réservés.</p>
+<p>Hakizimana Make Well — CEO</p>
+<p>Votre partenaire pour des prestations professionnelles sur mesure.</p>
 </div>
-
 </footer>
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
 
 <script>
 
 /* MENU MOBILE */
 
 const menu = document.querySelector('.menu');
-
 const nav = document.querySelector('nav');
 
 menu.addEventListener('click', () => {
-
 const isOpen = nav.classList.toggle('open');
-
 menu.setAttribute('aria-expanded', isOpen);
-
 });
-
-/* FERMETURE DU MENU */
 
 document.querySelectorAll('nav a').forEach(link => {
-
 link.addEventListener('click', () => {
-
 nav.classList.remove('open');
-
 menu.setAttribute('aria-expanded', 'false');
-
+});
 });
 
+/* SUPPRIMER LES IMAGES QUI NE CHARGENT PAS */
+
+document.querySelectorAll('.card img').forEach(img => {
+img.addEventListener('error', () => {
+img.classList.add('image-error');
+});
 });
 
-/* FORMULAIRE DE CONTACT */
+/* FORMULAIRE FORMSPREE */
 
 const form = document.getElementById('contact-form');
-
 const status = document.getElementById('form-status');
 
 form.addEventListener('submit', async function(e) {
-
 e.preventDefault();
 
 const button = form.querySelector('button');
 
 button.disabled = true;
-
 button.textContent = 'Envoi en cours...';
-
 status.textContent = '';
 
 try {
-
 const response = await fetch(form.action, {
-
 method:'POST',
-
 body:new FormData(form),
-
-headers:{
-'Accept':'application/json'
-}
-
+headers:{'Accept':'application/json'}
 });
 
 if(response.ok) {
-
 form.reset();
-
 status.textContent =
 'Merci ! Votre demande a été envoyée avec succès.';
-
 } else {
-
 status.textContent =
 'Une erreur est survenue. Veuillez réessayer.';
-
 }
 
 } catch(error) {
-
 status.textContent =
-'Connexion impossible. Veuillez vérifier votre connexion Internet.';
-
+'Connexion impossible. Vérifiez votre connexion Internet.';
 }
 
 button.disabled = false;
-
 button.textContent = 'Envoyer ma demande';
-
 });
 
 </script>
